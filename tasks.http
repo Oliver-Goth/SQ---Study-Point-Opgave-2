@@ -1,0 +1,27 @@
+### Create a new task
+POST http://127.0.0.1:8000/tasks
+Content-Type: application/json
+
+{
+  "title": "Do homework",
+  "description": "Math exercises"
+}
+
+### Get all tasks
+GET http://127.0.0.1:8000/tasks
+
+### Get a single task by ID
+GET http://127.0.0.1:8000/tasks/1
+
+### Update a task
+PUT http://127.0.0.1:8000/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Do homework updated",
+  "description": "Math exercises - updated",
+  "done": true
+}
+
+### Delete a task
+DELETE http://127.0.0.1:8000/tasks/1

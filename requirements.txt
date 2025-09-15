@@ -1,0 +1,13 @@
+pip install fastapi uvicorn pytest requests coverage
+pip install fastapi uvicorn
+pip install fastapi
+pip install pytest requests coverage
+uvicorn main:app --reload
+pytest -v
+coverage run --source=main -m pytest
+coverage report -m
+coverage report -m
+coverage html
+htmlcov/index.html
+
+
